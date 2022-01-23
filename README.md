@@ -8,8 +8,7 @@ This repository contains the following two folders:
 
 ## Prerequisites ##
 
-* `Node v14.17.0` or later
-* `serve` NPM module or `Apache` Web server
+* `serve` NPM module ( requires `Node.js`) or `Apache` Web server
 
 ## Running Gnosis Safe React Application ##
 
