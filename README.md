@@ -1,23 +1,25 @@
 # Gnosis Safe React Application #
 
-## Intruduction ##
+## Introduction ##
 
 This repository contains the following two folders:
 * **build-1**: The production build of https://github.com/gnosis/safe-react.git repository where static files are served from the "`/app`" folder.
 * **build-2**: The production build of https://github.com/gnosis/safe-react.git repository where static files are served directly from the "`/`" root folder.
 
-## Prerequisutes ##
+## Prerequisites ##
 
 * `Node v14.17.0` or later
-* `serve` NPM module
+* `serve` NPM module or `Apache` Web server
 
 ## Running Gnosis Safe React Application ##
 
 * Download https://github.com/sreenivas-reddy/gnosis-safe-react-app/archive/refs/heads/main.zip
 * Extract the archive at a location of your choice
 * `cd gnosis-safe-react-app-main`
-* `npm install -g serve`
-* `serve -s build-2`
+* Launching the Gnosis Safe React Appliation using `serve` NPM module:
+    * `npm install -g serve`
+    * `serve -s build-2`
+    * Navigate to http://localhost:3000
 ```
    ┌────────────────────────────────────────────────────┐
    │                                                    │
@@ -30,4 +32,6 @@ This repository contains the following two folders:
    │                                                    │
    └────────────────────────────────────────────────────┘
 ```
-* Navigate to http://localhost:3000
+* Launching the Gnosis Safe React Appliation using `Apache` Web server:
+    * Copy the contents of `gnosis-safe-react-app-main/build-2` folder to the document root folder of `Apache` Web server and access the application at port `80`
+
